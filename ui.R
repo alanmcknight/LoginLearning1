@@ -5,9 +5,8 @@ shinyUI(
     dashboardHeader(),
     dashboardSidebar(),
     dashboardBody(
-      
+      tags$head(includeScript("GTM.js")),
       uiOutput("page")
-      
     )
   )
   
